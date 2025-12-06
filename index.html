@@ -1,313 +1,275 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Roukaya Ben Jeddou - Enseignement & Recherche</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Configuration de la police Inter */
-        html {
-            font-family: 'Inter', sans-serif;
-            scroll-behavior: smooth;
-        }
-        /* Style pour les sections (pour l'ancre de navigation) */
-        section {
-            padding-top: 5rem; /* Espace pour le header fixe */
-        }
-        /* Styles pour un look professionnel */
-        .card {
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
-            border-radius: 0.75rem;
-            transition: transform 0.2s;
-        }
-        .card:hover {
-            transform: translateY(-2px);
-        }
-        /* Nouveau style pour les vignettes de la galerie */
-        .photo-thumbnail {
-            width: 100%;
-            height: 200px; /* Hauteur fixe pour un alignement propre */
-            object-fit: cover; /* Assure que l'image couvre la zone sans déformation */
-            border-radius: 0.5rem;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: opacity 0.3s;
-        }
-        .photo-thumbnail:hover {
-            opacity: 0.85;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roukaya Ben Jeddou</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  html { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+  section { padding-top: 5rem; }
+  /* Utilisation des couleurs existantes pour les cards */
+  .card { box-shadow: 0 4px 6px rgba(0,0,0,0.08); border-radius:0.75rem; transition: transform 0.2s; background:white; }
+  .card:hover { transform: translateY(-2px); }
+  .photo-thumbnail { width:100%; height:200px; object-fit:cover; border-radius:0.5rem; box-shadow:0 2px 4px rgba(0,0,0,0.1); transition:opacity 0.3s; }
+  .photo-thumbnail:hover { opacity:0.85; }
+  header { background:#FAF5E6; padding:1.5rem 2rem; display:flex; align-items:center; justify-content:space-between; box-shadow:0 2px 5px rgba(0,0,0,0.05); }
+  header h1 { margin:0; color:#4B3832; font-size:1.75rem; }
+  header p { margin:0; color:#556B2F; }
+  nav a { margin:0 0.75rem; color:#8B6D5C; text-decoration:none; font-weight:500; transition:color 0.2s; }
+  nav a:hover { color:#556B2F; }
+</style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-[#FAF5E6] text-gray-800">
 
-    <header class="fixed top-0 left-0 right-0 bg-white shadow-md z-10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
-            <h1 class="text-2xl font-extrabold text-indigo-700">
-                Dr. Roukaya BEN JEDDOU
-            </h1>
-            <nav class="space-x-4">
-                <a href="#accueil" class="text-gray-600 hover:text-indigo-700 font-medium transition duration-150">Accueil</a>
-                <a href="#parcours" class="text-gray-600 hover:text-indigo-700 font-medium transition duration-150">Parcours</a>
-                <a href="#enseignement" class="text-gray-600 hover:text-indigo-700 font-medium transition duration-150">Enseignement</a>
-                <a href="#recherche" class="text-gray-600 hover:text-indigo-700 font-medium transition duration-150">Recherche</a>
-                <a href="#manifestations" class="text-gray-600 hover:text-indigo-700 font-medium transition duration-150">Manifestations</a>
-                <a href="#galerie" class="text-gray-600 hover:text-indigo-700 font-medium transition duration-150">Galerie</a> <a href="#contact" class="text-gray-600 hover:text-indigo-700 font-medium transition duration-150">Contact</a>
-             </nav>
-        </div>
-    </header>
+<header>
+  <div class="flex items-center gap-4">
+    
+    <div>
+      <h1>Roukaya Ben Jeddou</h1>
+      
+    </div>
+  </div>
+  <nav class="hidden md:flex">
+    <a href="#accueil">Accueil</a>
+    <a href="#parcours">Parcours</a>
+    <a href="#enseignement">Enseignement</a>
+    <a href="#recherche">Recherche</a>
+    <a href="#manifestations">Manifestations</a>
+    <a href="#galerie">Galerie</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+<section id="accueil" class="min-h-screen pt-24 flex items-center">
+  <div class="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-12">
+    <div class="w-48 h-48 rounded-full overflow-hidden flex-shrink-0 border-4 border-[#556B2F] shadow-md">
+      <img src="Ma_photo_de_profil.png" alt="Portrait" class="object-cover w-full h-full">
+    </div>
+    <div>
+      <h2 class="text-2xl sm:text-3xl text-[#4B3832] mt-2">Enseignante-Chercheuse</h2>
+      <p class="mt-4 text-lg text-gray-700">Spécialisée en Systèmes d'Information et Aide à la Décision.</p>
+      <p class="mt-2 text-md text-gray-600">Expertise en Optimisation des Données, Intelligence Artificielle et Méthodes Multi-Critères.</p>
+    </div>
+  </div>
+</section>
+
+<section id="parcours" class="py-16 bg-[#fffaf0]">
+  <h2 class="text-3xl font-bold text-[#4B3832] border-b-4 border-[#556B2F] pb-2 inline-block">Parcours</h2>
+  <div class="mt-10 max-w-4xl mx-auto">
+    <ol class="relative border-l border-gray-300">
+      <li class="mb-10 ml-6">
+        <span class="absolute flex items-center justify-center w-3 h-3 rounded-full -left-1.5 bg-[#556B2F] ring-8 ring-[#FAF5E6]"></span>
+        <p class="text-sm font-semibold text-gray-600">2024</p>
+        <h3 class="text-lg font-semibold text-[#4B3832] mt-1">Doctorat en Sciences de Gestion</h3>
+        <p class="text-base text-gray-700">Université de Bourgogne Europe.</p>
+        <p class="text-sm text-gray-500 mt-1">Football Selection Optimization through the Integration of Management Theories, AI, and Multi-criteria Decision Making.</p>
+        <a href="https://theses.hal.science/tel-04870460v1/document" target="_blank" class="mt-2 inline-block text-sm text-gray-600 hover:text-gray-800 underline" target="_blank" class="mt-2 inline-block text-sm text-gray-600 hover:text-gray-800 underline">Lien thèse &rarr;</a>
+      </li>
+      <li class="mb-10 ml-6">
+        <span class="absolute flex items-center justify-center w-3 h-3 rounded-full -left-1.5 bg-[#556B2F] ring-8 ring-[#FAF5E6]"></span>
+        <p class="text-sm font-semibold text-gray-600">1999</p>
+        <h3 class="text-lg font-semibold text-[#4B3832] mt-1">DEA en Informatique - option Recherche Opérationnelle</h3>
+        <p class="text-base text-gray-700">Institut Supérieur de Gestion - Tunis.</p>
+        <a href="https://mohetn-my.sharepoint.com/:b:/g/personal/rokaya_benjeddou_fsjegj_u-jendouba_tn/EeVmr-ZRPnpEnX7N5IVv8VsBhC8OHo1Mcxtohsrk1Bz1rQ?e=KzpxAG" target="_blank" class="mt-2 inline-block text-sm text-gray-600 hover:text-gray-800 underline">Lien mémoire PDF &rarr;</a>
+      </li>
+      <li class="mb-10 ml-6">
+        <span class="absolute flex items-center justify-center w-3 h-3 rounded-full -left-1.5 bg-[#556B2F] ring-8 ring-[#FAF5E6]"></span>
+        <p class="text-sm font-semibold text-gray-600">1997</p>
+        <h3 class="text-lg font-semibold text-[#4B3832] mt-1">Maîtrise en Informatique Appliquée à la Gestion</h3>
+        <p class="text-base text-gray-700">Institut Supérieur de Gestion - Tunis.</p>
+      </li>
+      <li class="mb-10 ml-6">
+        <span class="absolute flex items-center justify-center w-3 h-3 rounded-full -left-1.5 bg-[#556B2F] ring-8 ring-[#FAF5E6]"></span>
+        <p class="text-sm font-semibold text-gray-600">1992</p>
+        <h3 class="text-lg font-semibold text-[#4B3832] mt-1">Baccalauréat Math-Sciences</h3>
+        <p class="text-base text-gray-700">Lycée Omrane - Tunis.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section id="enseignement" class="py-16 bg-[#FAF5E6]">
+<h2 class="text-3xl font-bold text-[#4B3832] border-b-4 border-[#556B2F] pb-2 inline-block">Activités d'Enseignement</h2>
+<div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  <div class="card p-6">
+    <h3 class="text-xl font-semibold text-[#4B3832]">Management du Systèmes d'Information</h3>
+    <ul class="mt-3 text-gray-700 text-sm list-disc pl-5">
+      <li>Cloud Computing, ERP, CRM</li>
+      <li>Gouvernance et audit des SI</li>
+      <li>Analyse et gestion de projets</li>
+    </ul>
+  </div>
+
+  <div class="card p-6">
+    <h3 class="text-xl font-semibold text-[#4B3832]">Bases de Données & Conception des SI</h3>
+    <ul class="mt-3 text-gray-700 text-sm list-disc pl-5">
+      <li>Bases de données / SGBD (SQL)</li>
+      <li>Conception des SI (UML, Merise)</li>
+      <li>Génie Logiciel</li>
+    </ul>
+  </div>
+
+  <div class="card p-6">
+    <h3 class="text-xl font-semibold text-[#4B3832]">Aide à la Décision</h3>
+    <ul class="mt-3 text-gray-700 text-sm list-disc pl-5">
+      <li>Techniques d'aide à la décision (MCDM)</li>
+      <li>Informatique Décisionnelle (ETL & Data Warehouse)</li>
+    </ul>
+  </div>
+</div>
+
+<div class="mt-10">
+  <h2 class="text-2xl font-semibold text-[#4B3832] mb-4">Supports de Cours (Moodle & PDF)</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-2">
+    <a href="https://uj2026.uvt.tn/course/view.php?id=107" class="block p-4 bg-white card hover:bg-gray-50 rounded-md shadow-sm underline text-gray-700">Cloud: Cours Interactif</a>
+    <a href="https://uj2026.uvt.tn/course/view.php?id=108" target="_blank" class="block p-4 bg-white card hover:bg-gray-50 rounded-md shadow-sm underline text-gray-700">ERP: Cours Interactif</a>
+    <a href="https://uj2026.uvt.tn/course/view.php?id=112" target="_blank" class="block p-4 bg-white card hover:bg-gray-50 rounded-md shadow-sm underline text-gray-700">Bases de Données: Cours Interactif</a>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <a href="https://mohetn-my.sharepoint.com/:b:/g/personal/rokaya_benjeddou_fsjegj_u-jendouba_tn/EV3A4UdqpSBCptpnvirAu7EBWDdPuKpJ91uFkOdUBR9FOA?e=IktSql" class="block p-4 bg-white card hover:bg-gray-50 rounded-md shadow-sm underline text-gray-700">Cloud: Support PDF</a>
+    <a href="https://mohetn-my.sharepoint.com/:b:/g/personal/rokaya_benjeddou_fsjegj_u-jendouba_tn/EZkgk5XXRbJJqVD-i1IVr78B8IbtUyMWgqfdooA0zikE_A?e=6IwVWi" class="block p-4 bg-white card hover:bg-gray-50 rounded-md shadow-sm underline text-gray-700">ERP: Support PDF</a>
+    <a href="https://mohetn-my.sharepoint.com/:b:/g/personal/rokaya_benjeddou_fsjegj_u-jendouba_tn/EZAxf2M0bztNg28gDDadPPgBsnPE2xoXs7t2qCyEYIoQ0A?e=7aBMlW" class="block p-4 bg-white card hover:bg-gray-50 rounded-md shadow-sm underline text-gray-700">Bases de Données: Support PDF</a>
+  </div>
+</div>
+</section>
+
+
+<section id="recherche" class="py-16 bg-[#fffaf0]">
+<h2 class="text-3xl font-bold text-[#4B3832] border-b-4 border-[#556B2F] pb-2 inline-block">Recherche & Publications</h2>
+<p class="mt-4 text-gray-700">Mes travaux portent sur l'application du Machine Learning et des méthodes MCDM à l'optimisation des performances et l'analyse de données complexes.</p>
+<div class="mt-8 space-y-6">
+  <div class="card p-5">
+    <p class="text-sm text-[#556B2F] font-medium">Article de Journal (Q1) - 2024</p>
+    <h3 class="text-lg font-semibold text-[#4B3832] mt-1">Using multi-criteria decision-making and machine learning for football player selection</h3>
+    <p class="text-gray-700 text-sm">Journal: Data Science and Management 7 (2024) 79-88.</p>
+    <a href="https://www.sciencedirect.com/science/article/pii/S2666764923000504" target="_blank" class="mt-2 inline-block text-sm text-gray-500 hover:text-gray-700 underline">Lien vers l'article &rarr;</a>
+  </div>
+  <div class="card p-5">
+    <p class="text-sm text-[#556B2F] font-medium">Article de Conférence - 2025</p>
+    <h3 class="text-lg font-semibold text-[#4B3832] mt-1">Optimizing Football Player Selection Using Random Forest for Criterion Weighting</h3>
+    <p class="text-gray-700 text-sm">Conférence ICODAI 2024, pp. 62-77.</p>
+    <a href="https://doi.org/10.2991/978-94-6463-654-3_6" target="_blank" class="mt-2 inline-block text-sm text-gray-500 hover:text-gray-700 underline">Lien vers l'article &rarr;</a>
+  </div>
+  <div class="card p-5">
+    <p class="text-sm text-[#556B2F] font-medium">Article de Journal / Archive (HAL)</p>
+    <h3 class="text-lg font-semibold text-[#4B3832] mt-1">Multi--log-logistic software reliability model</h3>
+    <p class="text-gray-700 text-sm">Référence : HAL.</p>
+    <a href="https://hal.science/hal-01125003v1" target="_blank" class="mt-2 inline-block text-sm text-gray-500 hover:text-gray-700 underline">Lien HAL &rarr;</a>
+  </div>
+</div>
+</section>
+
+
+<section id="manifestations" class="py-16 bg-[#FAF5E6]">
+    <h2 class="text-3xl font-bold text-[#4B3832] border-b-4 border-[#556B2F] pb-2 inline-block">Manifestations Scientifiques & Interventions</h2>
+    
+    <div class="mt-8 space-y-6">
         
-        <section id="accueil" class="min-h-screen pt-24 flex items-center">
-            <div class="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-12">
-                <div class="w-48 h-48 rounded-full overflow-hidden flex-shrink-0 border-4 border-gray-400 shadow-md">
-                    <img src="Ma_photo_de_profil.png" alt="Portrait de Dr. Roukaya Ben Jeddou" class="object-cover w-full h-full">
-                </div>
-                <div>
-                    <h2 class="text-2xl sm:text-3xl text-gray-800 mt-2">Enseignante-Chercheuse</h2>
-                    <p class="mt-4 text-lg text-gray-700">
-                        Spécialisée en Systèmes d'Information et Aide à la Décision.
-                    </p>
-                    <p class="mt-2 text-md text-gray-600">
-                        Expertise en Optimisation des Données, Intelligence Artificielle et Méthodes Multi-Critères.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section id="parcours" class="py-16 bg-white">
-            <h2 class="text-3xl font-bold text-gray-900 border-b-4 border-gray-400 pb-2 inline-block">Parcours</h2>
+        <div class="bg-white p-5 card">
+            <p class="text-sm text-[#556B2F] font-medium">Journée d'Étude & Présentation - Avril 2025</p>
+            <h3 class="text-lg font-semibold text-[#4B3832] mt-1">Intégration de l’IA et des méthodes de décision multi-critères dans la sélection des joueurs de football</h3>
+            <p class="text-gray-700 text-sm">Événement: Journée IA & Enjeux Sociétaux, Pôle IA, Université Bourgogne–Franche-Comté (UBE).</p>
             
-            <div class="mt-10 max-w-4xl mx-auto">
-                <ol class="relative border-l border-gray-300">
-                    <li class="mb-10 ml-6">
-                        <span class="absolute flex items-center justify-center w-3 h-3 rounded-full -left-1.5 bg-gray-600 ring-8 ring-white"></span>
-                        <p class="text-sm font-semibold text-gray-600">2024</p>
-                        <h3 class="text-lg font-semibold text-gray-800 mt-1">Doctorat en Sciences de Gestion</h3>
-                        <p class="text-base text-gray-700">Université de Bourgogne Europe.</p>
-                        <p class="text-sm text-gray-500 mt-1">Football Selection Optimization through the Integration of Management Theories, AI, and Multi-criteria Decision Making.</p>
-                        <a href="https://theses.hal.science/tel-04870460v1/document" target="_blank" class="mt-2 inline-block text-sm text-gray-600 hover:text-gray-800 underline">
-                            Télécharger la thèse / Consulter en ligne &rarr;
-                        </a>
-                    </li>
-                    <li class="mb-10 ml-6">
-                        <span class="absolute flex items-center justify-center w-3 h-3 rounded-full -left-1.5 bg-gray-600 ring-8 ring-white"></span>
-                        <p class="text-sm font-semibold text-gray-600">1999</p>
-                        <h3 class="text-lg font-semibold text-gray-800 mt-1">DEA en Informatique - option Recherche Opérationnelle</h3>
-                        <p class="text-base text-gray-700">Institut Supérieur de Gestion - Tunis.</p>
-                        <a href="https://mohetn-my.sharepoint.com/:b:/g/personal/rokaya_benjeddou_fsjegj_u-jendouba_tn/EeVmr-ZRPnpEnX7N5IVv8VsBhC8OHo1Mcxtohsrk1Bz1rQ?e=KzpxAG" target="_blank" class="mt-2 inline-block text-sm text-gray-600 hover:text-gray-800 underline">
-                            Télécharger le mémoire (PDF) &rarr;
-                        </a>
-                    </li>
-                    <li class="mb-10 ml-6">
-                        <span class="absolute flex items-center justify-center w-3 h-3 rounded-full -left-1.5 bg-gray-600 ring-8 ring-white"></span>
-                        <p class="text-sm font-semibold text-gray-600">1997</p>
-                        <h3 class="text-lg font-semibold text-gray-800 mt-1">Maîtrise en Informatique Appliquée à la Gestion</h3>
-                        <p class="text-base text-gray-700">Institut Supérieur de Gestion - Tunis.</p>
-                    </li>
-                    <li class="mb-10 ml-6">
-                        <span class="absolute flex items-center justify-center w-3 h-3 rounded-full -left-1.5 bg-gray-600 ring-8 ring-white"></span>
-                        <p class="text-sm font-semibold text-gray-600">1992</p>
-                        <h3 class="text-lg font-semibold text-gray-800 mt-1">Baccalauréat Math-Sciences </h3>
-                        <p class="text-base text-gray-700">Lycée Omrane - Tunis.</p>
-                    </li>
-                </ol>
+            <div class="mt-2 space-x-4">
+                <a href="https://mohetn-my.sharepoint.com/:b:/g/personal/rokaya_benjeddou_fsjegj_u-jendouba_tn/EZ8Zm_cE54FFpOHKbeecb6sBkwAVmAESpdCrP2-x2SSmsg?e=5yPDnE" target="_blank" class="text-sm text-gray-500 hover:text-[#556B2F] underline">Programme de la journée &rarr;</a>
+                <a href="https://mohetn-my.sharepoint.com/:b:/g/personal/rokaya_benjeddou_fsjegj_u-jendouba_tn/EfrA6x_HzRVGg5CwMtLYsQEBotqJc6j3OK0EgW_4uqLWww?e=ynarWD" target="_blank" class="text-sm text-[#4B3832] font-medium hover:text-[#556B2F] underline">Ma présentation (PDF) &rarr;</a>
             </div>
-        </section>
-
-        <section id="enseignement" class="py-16 bg-white">
-            <h2 class="text-3xl font-bold text-gray-900 border-b-4 border-gray-400 pb-2 inline-block">Activités d'Enseignement</h2>
-                        
-            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                
-                <div class="card bg-white p-6">
-                    <h3 class="text-xl font-semibold text-gray-800">Management du Systèmes d'Information</h3>
-                    <ul class="mt-3 text-gray-700 text-sm list-disc pl-5">
-                        <li>Cloud Computing, ERP, CRM</li>
-                        <li>Gouvernance et audit des SI</li>
-                        <li>Analyse et gestion de projets</li>
-                    </ul>
-                    <div class="mt-4 space-y-1 flex flex-col">
-                        <a href="https://uj2026.uvt.tn/course/view.php?id=107" target="_blank" class="inline-block text-gray-600 hover:text-gray-800 font-medium text-sm underline">
-                            Cloud: Cours Interactif Moodle &rarr;
-                        </a>
-                        <a href="https://mohetn-my.sharepoint.com/:b:/g/personal/rokaya_benjeddou_fsjegj_u-jendouba_tn/EV3A4UdqpSBCptpnvirAu7EBWDdPuKpJ91uFkOdUBR9FOA?e=IktSql" target="_blank" class="inline-block text-gray-600 hover:text-gray-800 font-medium text-sm underline">
-                            Cloud: Support de Cours PDF &rarr;
-                        </a>
-                        <a href="https://uj2026.uvt.tn/course/view.php?id=108" target="_blank" class="inline-block text-gray-600 hover:text-gray-800 font-medium text-sm underline">
-                            ERP: Cours Interactif Moodle &rarr;
-                        </a>
-                        <a href="https://mohetn-my.sharepoint.com/:b:/g/personal/rokaya_benjeddou_fsjegj_u-jendouba_tn/EZkgk5XXRbJJqVD-i1IVr78B8IbtUyMWgqfdooA0zikE_A?e=6IwVWi" target="_blank" class="inline-block text-gray-600 hover:text-gray-800 font-medium text-sm underline">
-                            ERP: Support de Cours PDF &rarr;
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="card bg-white p-6">
-                    <h3 class="text-xl font-semibold text-gray-800">Bases de Données & Conception des SI</h3>
-                    <ul class="mt-3 text-gray-700 text-sm list-disc pl-5">
-                        <li>Bases de données / SGBD (SQL)</li>
-                        <li>Conception des SI (UML, Merise)</li>
-                        <li>Génie Logiciel</li>
-                    </ul>
-                    <a href="https://uj2026.uvt.tn/course/view.php?id=112" target="_blank" class="inline-block text-gray-600 hover:text-gray-800 font-medium text-sm underline">
-                            BD: Cours Interactif Moodle &rarr;
-                        </a>
-
-                    <a href="https://mohetn-my.sharepoint.com/:b:/g/personal/rokaya_benjeddou_fsjegj_u-jendouba_tn/EZAxf2M0bztNg28gDDadPPgBsnPE2xoXs7t2qCyEYIoQ0A?e=7aBMlW" target="_blank" class="mt-4 inline-block text-gray-600 hover:text-gray-800 font-medium text-sm underline">
-                        BD Support de Cours &rarr;
-                    </a>
-                </div>
-
-                <div class="card bg-white p-6">
-                    <h3 class="text-xl font-semibold text-gray-800">Aide à la Décision</h3>
-                    <ul class="mt-3 text-gray-700 text-sm list-disc pl-5">
-                        <li>Techniques d'aide à la décision (MCDM)</li>
-                        <li>Informatique Décisionnelle (ETL & Data Warehouse)</li>
-                    </ul>
-                </div>
-
-            </div>
-        </section>
-
-        <section id="recherche" class="py-16 bg-gray-100">
-            <h2 class="text-3xl font-bold text-gray-900 border-b-4 border-indigo-500 pb-2 inline-block">Recherche & Publications</h2>
-            <p class="mt-4 text-gray-600">Mes travaux récents portent sur l'application du Machine Learning et des méthodes MCDM (Multi-Criteria Decision Making) à l'optimisation des performances dans le domaine sportif et l'analyse de données complexes.</p>
-
-            <div class="mt-8 space-y-6">
-                
-                <div class="bg-white p-5 card">
-                    <p class="text-sm text-pink-600 font-medium">Article de Journal (Q1) - 2024</p>
-                    <h3 class="text-lg font-semibold text-gray-900 mt-1">Using multi-criteria decision-making and machine learning for football player selection and performance prediction: A systematic review</h3>
-                    <p class="text-gray-700 text-sm">Journal: Data Science and Management 7 (2024) 79-88.</p>
-                    <a href="https://www.sciencedirect.com/science/article/pii/S2666764923000504" class="mt-2 inline-block text-sm text-gray-500 hover:text-gray-700 underline">Lien vers l'article &rarr;</a>
-                </div>
-                
-                <div class="bg-white p-5 card">
-                    <p class="text-sm text-indigo-600 font-medium">Article de Conférence - 2025</p>
-                    <h3 class="text-lg font-semibold text-gray-900 mt-1">Optimizing Football Player Selection Using Random Forest for Criterion Weighting and TOPSIS for Ranking</h3>
-                    <p class="text-gray-700 text-sm">Conférence: Proceedings of the International Conference on Decision Aid and Artificial Intelligence (ICODAI 2024), pp. 62-77.</p>
-                    <a href="https://doi.org/10.2991/978-94-6463-654-3_6" target="_blank" class="mt-2 inline-block text-sm text-gray-500 hover:text-gray-700 underline">Lien vers l'article &rarr;</a>
-                </div>
-                
-                <div class="bg-white p-5 card">
-                    <p class="text-sm text-pink-600 font-medium">Article de Journal / Archive (HAL)</p>
-                    <h3 class="text-lg font-semibold text-gray-900 mt-1">Multi--log-logistic software reliability model</h3>
-                    <p class="text-gray-700 text-sm">Référence : Archive ouverte HAL.</p>
-                    <a href="https://hal.science/hal-01125003v1" target="_blank" class="mt-2 inline-block text-sm text-gray-500 hover:text-gray-700 underline">Lien vers la référence HAL &rarr;</a>
-                </div>
-                
-            </div>
-        </section>
-
-        <section id="manifestations" class="py-16 bg-gray-100">
-            <h2 class="text-3xl font-bold text-gray-900 border-b-4 border-indigo-500 pb-2 inline-block">Manifestations Scientifiques & Interventions</h2>
-            
-            <div class="mt-8 space-y-6">
-                
-                <div class="bg-white p-5 card">
-                    <p class="text-sm text-pink-600 font-medium">Journée d'Étude & Présentation - Avril 2025</p>
-                    <h3 class="text-lg font-semibold text-gray-900 mt-1">Intégration de l’IA et des méthodes de décision multi-critères dans la sélection des joueurs de football</h3>
-                    <p class="text-gray-700 text-sm">Événement: Journée IA & Enjeux Sociétaux, Pôle IA, Université Bourgogne–Franche-Comté (UBE).</p>
-                    
-                    <div class="mt-2 space-x-4">
-                        <a href="https://mohetn-my.sharepoint.com/:b:/g/personal/rokaya_benjeddou_fsjegj_u-jendouba_tn/EZ8Zm_cE54FFpOHKbeecb6sBkwAVmAESpdCrP2-x2SSmsg?e=5yPDnE" target="_blank" class="text-sm text-gray-500 hover:text-gray-700 underline">Programme de la journée &rarr;</a>
-                        <a href="https://mohetn-my.sharepoint.com/:b:/g/personal/rokaya_benjeddou_fsjegj_u-jendouba_tn/EfrA6x_HzRVGg5CwMtLYsQEBotqJc6j3OK0EgW_4uqLWww?e=ynarWD" target="_blank" class="text-sm text-gray-700 font-medium hover:text-indigo-700 underline">Ma présentation (PDF) &rarr;</a>
-                    </div>
-                </div>
-                
-                <div class="bg-white p-5 card">
-                    <p class="text-sm text-green-600 font-medium">Formation / Animation d'Atelier - Novembre 2025</p>
-                    <h3 class="text-lg font-semibold text-gray-900 mt-1">La revue systématique de la littérature comme un outil essentiel pour débuter une recherche</h3>
-                    <p class="text-gray-700 text-sm">Cadre: Formation destinée aux enseignants-chercheurs et étudiants de recherche, Faculté des Sciences Juridiques, Économiques et de Gestion.</p>
-                    
-                    <div class="mt-2 space-x-4">
-                        <a href="https://mohetn-my.sharepoint.com/:b:/g/personal/rokaya_benjeddou_fsjegj_u-jendouba_tn/EQBA9j54blVGgROL9fQEmC8BObODxh8tLbtU4nn2RisU5g?e=4Yy4iS" target="_blank" class="text-sm text-gray-500 hover:text-gray-700 underline">Détails de la formation &rarr;</a>
-                        <a href="https://mohetn-my.sharepoint.com/:b:/g/personal/rokaya_benjeddou_fsjegj_u-jendouba_tn/EQFHXWBKRW1PgVXvxrZ80TIBRp8w9DWk1ufCKKFrKyKRVQ?e=T0GGHy" target="_blank" class="text-sm text-gray-700 font-medium hover:text-indigo-700 underline">Support de cours (PDF) &rarr;</a>
-                    </div>
-                </div>
-                
-                <div class="bg-white p-5 card">
-                    <p class="text-sm text-purple-600 font-medium">Conférence Inaugurale & Intervention - Novembre 2025</p>
-                    <h3 class="text-lg font-semibold text-gray-900 mt-1">IA générative comme partenaire pédagogique: human in the loop</h3>
-                    <p class="text-gray-700 text-sm">Événement: Conférence inaugurale sur l’IA dans le milieu universitaire (IAG), ISET Béja, Tunisie.</p>
-                    
-                    <div class="mt-2 space-x-4">
-                        <a href="[LIEN VERS LE PROGRAMME DE LA CONFÉRENCE ICI]" target="_blank" class="text-sm text-gray-500 hover:text-gray-700 underline">Programme de l'événement &rarr;</a>
-                        <a href="https://mohetn-my.sharepoint.com/:b:/g/personal/rokaya_benjeddou_fsjegj_u-jendouba_tn/Eat7FxNNaPVHlDFoqoy4easB7Xo47RtNaYorjjApLmd6Aw?e=kc9dWl" target="_blank" class="text-sm text-gray-700 font-medium hover:text-indigo-700 underline">Ma présentation (PDF) &rarr;</a>
-                    </div>
-                </div>
-                
-            </div>
-            
-            <div class="bg-white p-5 card">
-            <p class="text-sm text-blue-600 font-medium">Formations Complémentaires</p>
-                        
-            <div class="mt-4 flex flex-wrap gap-4">
-                
-                <a href="https://mohetn-my.sharepoint.com/:b:/g/personal/rokaya_benjeddou_fsjegj_u-jendouba_tn/EaI5C0jc38BGpu-3-JxoSfMBHaUTGCUcSHKsbizmnYp4cg?e=4bAhtV" target="_blank" class="text-sm text-indigo-700 hover:text-gray-900 font-medium underline">
-                    Attestation MOOC 1 (Intégrité scientifique) &rarr;
-                </a>
-                
-                <a href="https://mohetn-my.sharepoint.com/:b:/g/personal/rokaya_benjeddou_fsjegj_u-jendouba_tn/EfVaBoFmRJNCslBoo0xlcy0BIIcGwsqkYuAuKOJGceV8jA?e=Bx9PXz" target="_blank" class="text-sm text-indigo-700 hover:text-gray-900 font-medium underline">
-                    Attestation MOOC 2 (Éthique de la recherche) &rarr;
-                </a>
-
-                <a href="https://mohetn-my.sharepoint.com/:b:/g/personal/rokaya_benjeddou_fsjegj_u-jendouba_tn/Eb42TngRvDFEoI-f9dRTt4IBocvQhfBYpbu1jM8GyGMcgA?e=RVvF4Q" target="_blank" class="text-sm text-indigo-700 hover:text-gray-900 font-medium underline">
-                    Attestation MOOC 3 (La science ouverte) &rarr;
-                </a>
-                
-                </div>
-        </div>            
-            
-        </section>
-
-        <section id="galerie" class="py-16 bg-white">
-            <h2 class="text-3xl font-bold text-gray-900 border-b-4 border-indigo-500 pb-2 inline-block">📸 Galerie & Souvenirs</h2>
-            
-            <div class="mt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                
-                <div class="relative group">
-                    <img src="IMG-20250603-WA0002.jpg" alt="Description de la photo 1" class="photo-thumbnail">
-                    <p class="absolute bottom-2 left-2 text-white text-xs bg-black bg-opacity-50 px-2 py-1 rounded-sm opacity-0 group-hover:opacity-100 transition duration-300">Soutenance Aminanta </p>
-                </div>
-
-                <div class="relative group">
-                    <img src="IMG-20241216-WA0039.jpg" alt="Description de la photo 2" class="photo-thumbnail">
-                    <p class="absolute bottom-2 left-2 text-white text-xs bg-black bg-opacity-50 px-2 py-1 rounded-sm opacity-0 group-hover:opacity-100 transition duration-300">Ma soutenance de thèse </p>
-                </div>
-
-                <div class="relative group">
-                    <img src="photo_iset.jpg" alt="Description de la photo 3" class="photo-thumbnail">
-                    <p class="absolute bottom-2 left-2 text-white text-xs bg-black bg-opacity-50 px-2 py-1 rounded-sm opacity-0 group-hover:opacity-100 transition duration-300">Journée IA générative</p>
-                </div>
-                
-                
-            </div>
-        </section>
-
-
-        <section id="contact" class="py-16">
-            <h2 class="text-3xl font-bold text-gray-900 border-b-4 border-indigo-500 pb-2 inline-block">Contact</h2>
-            <div class="mt-8 bg-white p-6 card max-w-lg">
-                <p class="text-gray-700">
-                    Faculté des Sciences Juridiques, Economiques et de Gestion<br>
-                    Université de Jendouba
-                </p>
-                <p class="mt-4">
-                    Email :<a href="mailto:rokaya.benjeddou@fsjegj.u-jendouba.tn" class="text-indigo-600 hover:underline">rokaya.benjeddou@fsjegj.u-jendouba.tn</a>
-                </p>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="mt-16 bg-gray-800 text-white py-6">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p>&copy; 2024 Dr. Roukaya Ben Jeddou. Tous droits réservés.</p>
-            <p class="text-sm mt-1">Dernière mise à jour : Décembre 2024</p>
         </div>
-    </footer>
+        
+        <div class="bg-white p-5 card">
+            <p class="text-sm text-[#556B2F] font-medium">Formation / Animation d'Atelier - Novembre 2025</p>
+            <h3 class="text-lg font-semibold text-[#4B3832] mt-1">La revue systématique de la littérature comme un outil essentiel pour débuter une recherche</h3>
+            <p class="text-gray-700 text-sm">Cadre: Formation destinée aux enseignants-chercheurs et étudiants de recherche, Faculté des Sciences Juridiques, Économiques et de Gestion.</p>
+            
+            <div class="mt-2 space-x-4">
+                <a href="https://mohetn-my.sharepoint.com/:b:/g/personal/rokaya_benjeddou_fsjegj_u-jendouba_tn/EQBA9j54blVGgROL9fQEmC8BObODxh8tLbtU4nn2RisU5g?e=4Yy4iS" target="_blank" class="text-sm text-gray-500 hover:text-[#556B2F] underline">Détails de la formation &rarr;</a>
+                <a href="https://mohetn-my.sharepoint.com/:b:/g/personal/rokaya_benjeddou_fsjegj_u-jendouba_tn/EQFHXWBKRW1PgVXvxrZ80TIBRp8w9DWk1ufCKKFrKyKRVQ?e=T0GGHy" target="_blank" class="text-sm text-[#4B3832] font-medium hover:text-[#556B2F] underline">Support de cours (PDF) &rarr;</a>
+            </div>
+        </div>
+        
+        <div class="bg-white p-5 card">
+            <p class="text-sm text-[#556B2F] font-medium">Conférence Inaugurale & Intervention - Novembre 2025</p>
+            <h3 class="text-lg font-semibold text-[#4B3832] mt-1">IA générative comme partenaire pédagogique: human in the loop</h3>
+            <p class="text-gray-700 text-sm">Événement: Conférence inaugurale sur l’IA dans le milieu universitaire (IAG), ISET Béja, Tunisie.</p>
+            
+            <div class="mt-2 space-x-4">
+                <a href="[LIEN VERS LE PROGRAMME DE LA CONFÉRENCE ICI]" target="_blank" class="text-sm text-gray-500 hover:text-[#556B2F] underline">Programme de l'événement &rarr;</a>
+                <a href="https://mohetn-my.sharepoint.com/:b:/g/personal/rokaya_benjeddou_fsjegj_u-jendouba_tn/Eat7FxNNaPVHlDFoqoy4easB7Xo47RtNaYorjjApLmd6Aw?e=kc9dWl" target="_blank" class="text-sm text-[#4B3832] font-medium hover:text-[#556B2F] underline">Ma présentation (PDF) &rarr;</a>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="bg-white p-5 card mt-6">
+    <p class="text-sm text-[#4B3832] font-medium">Formations Complémentaires (MOOCs)</p>
+        
+    <div class="mt-4 flex flex-wrap gap-4">
+        
+        <a href="https://mohetn-my.sharepoint.com/:b:/g/personal/rokaya_benjeddou_fsjegj_u-jendouba_tn/EaI5C0jc38BGpu-3-JxoSfMBHaUTGCUcSHKsbizmnYp4cg?e=4bAhtV" target="_blank" class="text-sm text-[#556B2F] hover:text-[#4B3832] font-medium underline">
+            Attestation MOOC 1 (Intégrité scientifique) &rarr;
+        </a>
+        
+        <a href="https://mohetn-my.sharepoint.com/:b:/g/personal/rokaya_benjeddou_fsjegj_u-jendouba_tn/EfVaBoFmRJNCslBoo0xlcy0BIIcGwsqkYuAuKOJGceV8jA?e=Bx9PXz" target="_blank" class="text-sm text-[#556B2F] hover:text-[#4B3832] font-medium underline">
+            Attestation MOOC 2 (Éthique de la recherche) &rarr;
+        </a>
+
+        <a href="https://mohetn-my.sharepoint.com/:b:/g/personal/rokaya_benjeddou_fsjegj_u-jendouba_tn/Eb42TngRvDFEoI-f9dRTt4IBocvQhfBYpbu1jM8GyGMcgA?e=RVvF4Q" target="_blank" class="text-sm text-[#556B2F] hover:text-[#4B3832] font-medium underline">
+            Attestation MOOC 3 (La science ouverte) &rarr;
+        </a>
+        
+        </div>
+    </div>        
+</section>
+
+<section id="galerie" class="py-16 bg-[#fffaf0]">
+    <h2 class="text-3xl font-bold text-[#4B3832] border-b-4 border-[#556B2F] pb-2 inline-block">📸 Galerie & Souvenirs</h2>
+    
+    <div class="mt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        
+        <div class="relative group">
+            <img src="IMG-20250603-WA0002.jpg" alt="Soutenance Aminanta" class="photo-thumbnail">
+            <p class="absolute bottom-2 left-2 text-white text-xs bg-black bg-opacity-50 px-2 py-1 rounded-sm opacity-0 group-hover:opacity-100 transition duration-300">Soutenance Aminanta </p>
+        </div>
+
+        <div class="relative group">
+            <img src="IMG-20241216-WA0039.jpg" alt="Ma soutenance de thèse" class="photo-thumbnail">
+            <p class="absolute bottom-2 left-2 text-white text-xs bg-black bg-opacity-50 px-2 py-1 rounded-sm opacity-0 group-hover:opacity-100 transition duration-300">Ma soutenance de thèse </p>
+        </div>
+
+        <div class="relative group">
+            <img src="photo_iset.jpg" alt="Journée IA générative" class="photo-thumbnail">
+            <p class="absolute bottom-2 left-2 text-white text-xs bg-black bg-opacity-50 px-2 py-1 rounded-sm opacity-0 group-hover:opacity-100 transition duration-300">Journée IA générative</p>
+        </div>
+        
+        </div>
+</section>
+
+
+<section id="contact" class="py-16 bg-[#FAF5E6]">
+    <h2 class="text-3xl font-bold text-[#4B3832] border-b-4 border-[#556B2F] pb-2 inline-block">Contact</h2>
+    <div class="mt-8 bg-white p-6 card max-w-lg">
+        <p class="text-gray-700">
+            Faculté des Sciences Juridiques, Economiques et de Gestion<br>
+            Université de Jendouba
+        </p>
+        <p class="mt-4">
+            Email : <a href="mailto:rokaya.benjeddou@fsjegj.u-jendouba.tn" class="text-[#556B2F] hover:underline">rokaya.benjeddou@fsjegj.u-jendouba.tn</a>
+        </p>
+    </div>
+</section>
+
+</main>
+
+<footer class="mt-16 bg-gray-800 text-white py-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p>&copy; 2024 Dr. Roukaya Ben Jeddou. Tous droits réservés.</p>
+        <p class="text-sm mt-1">Dernière mise à jour : Décembre 2024</p>
+    </div>
+</footer>
 
 </body>
 </html>
